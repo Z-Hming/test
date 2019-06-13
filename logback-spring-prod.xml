@@ -4,7 +4,7 @@
     <property name="LOG_HOME" value="./logs"/>                                                                        <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
     <property name="FILE_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"/>       <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
     <property name="FILE_SIZE" value="100mb"/>                                                                         <!--日志文件最大的大小-->
-    <property name="FILE_NAME" value="delivery"/>
+    <property name="FILE_NAME" value="logfile"/>
 
     <!-- 彩色日志 -->
     <!-- 彩色日志依赖的渲染类 -->
@@ -79,16 +79,16 @@
         <appender-ref ref="DAY_ERROR"/>
         <appender-ref ref="DAY_INFO"/>
     </root>
-    <logger name="com.archly.delivery.service" level="debug" additivity="false">
+    <logger name="com.***.service" level="debug" additivity="false">
         <appender-ref ref="DAY_DEBUG"/>
     </logger>
-    <logger name="com.archly.delivery.controller" level="debug" additivity="false">
+    <logger name="com.***.controller" level="debug" additivity="false">
         <appender-ref ref="DAY_DEBUG"/>
     </logger>
-    <logger name="com.archly.delivery.engine" level="debug" additivity="false">
+    <logger name="com.***.engine" level="debug" additivity="false">
         <appender-ref ref="DAY_DEBUG"/>
     </logger>
-    <logger name="com.archly.delivery.dao.mapper" level="debug" additivity="false">
+    <logger name="com.***.dao.mapper" level="debug" additivity="false">
         <appender-ref ref="DAY_DEBUG"/>
     </logger>
 
