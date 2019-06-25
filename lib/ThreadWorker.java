@@ -1,14 +1,10 @@
-package com.archly.delivery.engine.worker;
+
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.*;
 
-/**
- * @author :zj.zou
- * @desc :
- * @date :2019.03.14
- */
+
 @Slf4j
 public class ThreadWorker implements Worker {
 
